@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: 'PT Serif', serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#profil {
+    margin-top: 150px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.route {
+    width: 100vw;
+}
+
+
+.privatchat {
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    right: 30px;
+    padding: 10px;
+    background: white;
+}
+
+.welcome {
+    width: 600px;
+    
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.22);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.welcome img {
+    width: 100px;
+    height: 100px;
+}
+
+.formcontainer {
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+
+input {
+    margin: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 32px;
+}
+
+input:focus {
+    border-bottom: 2px solid chocolate;
+    transition: border-bottom 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.errorinput {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #e3e3e3;
+    box-shadow: 0 0 29px rgba(0, 0, 0, 0.5);
+    background-position-x: left 30px;
+    background-position-y: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.picwelcome {
+    height: 80px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.picwelcome p {
+    align-self: center;
+    padding: 10px;
+}
+
+.picwelcome img {
+    height: 100%;
+}
+
+.logout {
+    float: right;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.uploaderbg {
+    position: fixed;
+    top: 110px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.uploader-container {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploader-container form {
+    text-align: center;
+}
+
+.uploader input {
+    font-size: 24px;
+}
+
+.uplogo {
+    margin-top: 130px;
+}
+
+footer {
+    height: 100px;
+    margin-left: -10px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    background: rgba(233, 233, 233, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.profilpiccontainer {
+    cursor: pointer;
+    width: 600px;
+}
+
+.profilpiccontainer img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.profilcontainer img {
+    width: 600px;
+    border-radius: 15px;
+}
+
+
+button {
+    min-width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.editbio button {
+    display: block;
+}
+
+.escape {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 999;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.escape img {
+    width: 100%;
+    height: 100%;
+}
+
+.escape:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.oprofilpic {
+    width: 300px;
+}
+
+.linktoother {
+    margin-top: 130px;
+}
+
+.friends {
+    display: inline-flex;
+    width: 100%;
+    overflow: scroll;
+}
+
+.wannabe {
+    display: inline-flex;
+    width: 0px;
+}
+
+.friend {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.friend p {
+    padding-left: 20px;
+}
+
+.friend img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0, 0.9);
+}
+
+.friend:hover > img {
+    box-shadow: 10px 8px 16px rgba(0,0,0, 0.9);
+    width: 205px;
+    height: 205px;
+}
+
+.opp {
+    margin-top: 150px;
+    padding-left: 40px;
+}
+
+.friendscontainer {
+    width: 70%;
+    padding-left: 40px;
+    margin-top: 150px;
+}
+
+.text {
+    text-align: center;
+}
+
+.onlineusers {
+    margin-top: 150px;
+    width: 100vw;
+    padding-left: 40px;
+}
+
+.messages-container {
+    margin-top: 150px;
+    width: 100vw;
+    padding-left: 40px;
+}
+
+#chat-messages {
+    width: 70%;
+    background: #80808033;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0, 0.3);
+}
+
+.message {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #bce3e4;
+    margin-bottom: 20px;
+}
+
+.messagetext {
+    margin-left: 30px
+}
+
+.messagetext p:first-child {
+    /* border-bottom: 1px solid black; */
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.message img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.livetitle {
+    text-align: center;
+}
+
+.livefriend {
+    display: inline-flex;
+    justify-content: space-around;
+    height: 60px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #8080801a;
+    cursor: pointer;
+}
+
+.livefriend p {
+    font-size: 19px;
+}
+
+.livefriend img {
+    height: 100%
+}
+
+
+.pmessage {
+    width: 100%;
+    height: 30px;
+    display: inline;
+}
+
+.pmessage p {
+    font-size: 16px;
+}
+
+.pmessagetext-left {
+    float: left;
+    background: #d5d5d5;
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.pmessagetext-right {
+    float: right;
+    background: #ff900099;
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.sendmessagecontainer {
+    height: 400px;
+    overflow-x: scroll;
+}
+
+.messageform {
+    width: 100%;
+}
+
+.messageform input {
+    width: 90%;
+}
